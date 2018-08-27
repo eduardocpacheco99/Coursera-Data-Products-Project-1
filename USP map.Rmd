@@ -1,0 +1,37 @@
+---
+title: "Coursera Data Products Project 1"
+author: "Eduardo Pacheco"
+date: "27 de agosto de 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My map
+This is a HTML page with a map embeded and marking Universidade de São Paulo campus created in 27. August, 2018
+
+
+```{r}
+library(leaflet)
+
+
+USPIcon <- makeIcon(
+  iconUrl = "http://www.imagens.usp.br/wp-content/uploads/USP.jpg",
+  iconWidth = 31*215/230, iconHeight = 31,
+  iconAnchorX = 31*215/230/2, iconAnchorY = 16
+)
+
+USPLatLong <- data.frame(
+  lat = c(-23.5501627, -23.5618844, -23.4821679,-22.7153788 ),
+  lng = c(-46.6377418, -46.7682388, -46.5028179, -47.6393763))
+
+USPLatLong %>% 
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(icon = USPIcon)
+
+
+```
+
