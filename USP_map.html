@@ -135,7 +135,7 @@ $(document).ready(function () {
 
 <div id="my-map" class="section level2">
 <h2>My map</h2>
-<p>This is a HTML page with a map embeded and marking Universidade de São Paulo campus created in 27. August, 2018</p>
+<p>Universidade de São Paulo campus created in 27. August, 2018</p>
 <pre class="r"><code>library(leaflet)
 
 
@@ -146,15 +146,15 @@ USPIcon &lt;- makeIcon(
 )
 
 USPLatLong &lt;- data.frame(
-  lat = c(-23.5501627, -23.5618844, -23.4821679,-22.7153788 ),
-  lng = c(-46.6377418, -46.7682388, -46.5028179, -47.6393763))
+  lat = c(-23.5501627, -23.5618844, -23.4821679 ),
+  lng = c(-46.6377418, -46.7682388, -46.5028179))
 
 USPLatLong %&gt;% 
   leaflet() %&gt;%
   addTiles() %&gt;%
   addMarkers(icon = USPIcon)</code></pre>
-<div id="htmlwidget-dabd4631579538d53a78" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dabd4631579538d53a78">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[-23.5501627,-23.5618844,-23.4821679,-22.7153788],[-46.6377418,-46.7682388,-46.5028179,-47.6393763],{"iconUrl":{"data":"http://www.imagens.usp.br/wp-content/uploads/USP.jpg","index":0},"iconWidth":28.9782608695652,"iconHeight":31,"iconAnchorX":14.4891304347826,"iconAnchorY":16},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-23.5618844,-22.7153788],"lng":[-47.6393763,-46.5028179]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d47a29bcd29dbf2a66cc" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d47a29bcd29dbf2a66cc">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[-23.5501627,-23.5618844,-23.4821679],[-46.6377418,-46.7682388,-46.5028179],{"iconUrl":{"data":"http://www.imagens.usp.br/wp-content/uploads/USP.jpg","index":0},"iconWidth":28.9782608695652,"iconHeight":31,"iconAnchorX":14.4891304347826,"iconAnchorY":16},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-23.5618844,-23.4821679],"lng":[-46.7682388,-46.5028179]}},"evals":[],"jsHooks":[]}</script>
 </div>
 
 
